@@ -1,0 +1,1 @@
+docker run -d --hostname my-rabbit --name rabbit-deduplication -p 8080:15672 -p 5672:5672 -p 25676:25676 thomasr002/rabbit-deduplication

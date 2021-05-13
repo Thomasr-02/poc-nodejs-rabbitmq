@@ -1,0 +1,13 @@
+
+version: '2'
+services:
+  rabbitmq:
+    image: thomasr002/rabbit-deduplication
+    container_name: rabbitmq
+    hostname: rabbitmq
+    ports:
+      - 15672:15672
+      - 5672:5672
+    network_mode: bridge
+    volumes:
+      - $PWD/storage/rabbitmq:/var/lib/rabbitmq/3.7
